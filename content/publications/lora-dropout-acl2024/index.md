@@ -26,8 +26,8 @@ summary: 'ACL 2024 Findings paper unifying LoRA and dropout in a single framewor
 
 tags:
   - Parameter-Efficient Fine-Tuning
-  - LoRA
-  - ACL
+  - ACL 2024 Findings
+  - First Author
 
 featured: false
 ---

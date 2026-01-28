@@ -25,10 +25,8 @@ abstract: 'UAlign leverages uncertainty estimations to improve factuality alignm
 summary: 'A main conference paper at ACL 2025 presenting UAlign for factuality alignment using uncertainty estimations.'
 
 tags:
-  - Factuality
-  - Uncertainty Estimation
   - LLM Alignment
-  - ACL
+  - ACL 2025 Main
 
 featured: false
 ---

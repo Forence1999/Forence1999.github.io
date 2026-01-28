@@ -27,8 +27,8 @@ summary: 'EMNLP 2025 main conference paper on efficient inference through specul
 
 tags:
   - Efficient Inference
-  - Quantization
-  - EMNLP
+  - EMNLP 2025 Main
+  - First Author
 
 featured: true
 

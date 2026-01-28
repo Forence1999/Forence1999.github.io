@@ -41,8 +41,8 @@ summary: 'ICML 2026 submission on runtime self-reconfiguration for agentic syste
 
 tags:
   - Agent Systems
-  - LLM
-  - ICML
+  - ICML 2026 Submission
+  - Co-Corresponding Author
 
 featured: true
 ---

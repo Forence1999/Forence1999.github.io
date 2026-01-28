@@ -26,9 +26,7 @@ summary: 'ACL 2025 Findings paper on multilingual confidence estimation in LLMs.
 
 tags:
   - Multilingual NLP
-  - Confidence Estimation
-  - LLM Calibration
-  - ACL
+  - ACL 2025 Findings
 
 featured: false
 ---

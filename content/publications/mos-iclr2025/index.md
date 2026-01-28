@@ -28,8 +28,8 @@ summary: 'A paper at ICLR 2025 presenting MoS, a method for more parameter-effic
 
 tags:
   - Parameter-Efficient Fine-Tuning
-  - LoRA
-  - ICLR
+  - ICLR 2025
+  - First Author
 
 featured: true
 ---

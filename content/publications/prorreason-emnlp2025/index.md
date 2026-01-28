@@ -32,9 +32,9 @@ abstract: 'ProReason proposes a framework to decouple visual and reasoning capab
 summary: 'EMNLP 2025 main conference paper on multi-modal proactive reasoning (Co-Corresponding Author).'
 
 tags:
-  - Multi-Modal Learning
-  - Reasoning
-  - EMNLP
+  - Multi-Modal Reasoning
+  - EMNLP 2025 Main
+  - Co-Corresponding Author
 
 featured: true
 

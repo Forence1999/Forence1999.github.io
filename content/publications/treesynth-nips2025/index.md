@@ -32,8 +32,8 @@ summary: 'A spotlight paper at NeurIPS 2025 presenting TreeSynth, a method for s
 
 tags:
   - Data Synthesis
-  - Machine Learning
-  - NeurIPS
+  - NeurIPS 2025 Spotlight
+  - First Author
 
 featured: true
 

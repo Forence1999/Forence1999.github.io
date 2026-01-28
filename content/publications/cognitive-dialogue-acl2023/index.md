@@ -21,9 +21,8 @@ abstract: 'This paper presents a cognitive stimulation dialogue system that fuse
 summary: 'ACL 2023 main conference paper on dialogue systems for cognitive health.'
 
 tags:
-  - Dialogue Systems
   - Healthcare AI
-  - ACL
+  - ACL 2023 Main
 
 featured: false
 ---

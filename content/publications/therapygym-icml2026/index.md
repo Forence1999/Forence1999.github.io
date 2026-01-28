@@ -28,9 +28,7 @@ summary: 'ICML 2026 submission on evaluating clinical fidelity and safety in the
 
 tags:
   - AI Psychology
-  - Mental Health
-  - Chatbots
-  - ICML
+  - ICML 2026 Submission
 
 featured: true
 ---

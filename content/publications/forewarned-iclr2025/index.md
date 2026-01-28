@@ -26,8 +26,7 @@ summary: 'ICLR 2025 paper on data synthesis through failure-induced exploration.
 
 tags:
   - Data Synthesis
-  - LLM Training
-  - ICLR
+  - ICLR 2025
 
 featured: false
 

@@ -26,10 +26,8 @@ abstract: 'This paper presents the development and utilization of a large-scale 
 summary: 'EMNLP 2025 Findings paper on developing a large-scale Cantonese dataset for LLM multi-tasking.'
 
 tags:
-  - Cantonese
-  - Dataset
   - Multilingual NLP
-  - EMNLP
+  - EMNLP 2025 Findings
 
 featured: false
 ---

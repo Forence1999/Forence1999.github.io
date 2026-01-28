@@ -24,9 +24,8 @@ abstract: 'The rapid evolution of large language models (LLMs) has transformed t
 summary: 'NAACL 2025 Findings paper benchmarking Cantonese capabilities of LLMs.'
 
 tags:
-  - Cantonese
-  - LLM Evaluation
-  - NAACL
+  - Multilingual NLP
+  - NAACL 2025 Findings
 
 featured: false
 
