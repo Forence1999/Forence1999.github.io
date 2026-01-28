@@ -1,0 +1,6 @@
+{{/* Load WeChat modal JavaScript */}}
+{{ $wechat_js := resources.Get "js/wechat-modal.js" }}
+{{ if $wechat_js }}
+  {{ $wechat_js_min := $wechat_js | resources.Minify }}
+  <script src="{{ $wechat_js_min.RelPermalink }}" defer></script>
+{{ end }}

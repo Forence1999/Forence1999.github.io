@@ -1,0 +1,6 @@
+{{/* Load custom SCSS */}}
+{{ $custom_scss := resources.Get "scss/custom.scss" }}
+{{ if $custom_scss }}
+  {{ $custom_css := $custom_scss | css.Sass | resources.Minify }}
+  <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}">
+{{ end }}

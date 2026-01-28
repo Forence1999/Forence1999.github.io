@@ -1,0 +1,217 @@
+// ══════════════════════════════════════════════════════════════════════════════
+// CUSTOM FONTS - Montserrat & Roboto
+// Matching the font configuration from Sheng.mhtml
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+
+// Override Hugo Blox v2 CSS variables
+:root {
+  --font-sans: Roboto, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  --font-serif: Roboto, ui-serif, Georgia, serif !important;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  --default-font-family: var(--font-sans) !important;
+  --default-mono-font-family: var(--font-mono) !important;
+}
+
+// Override base font families
+html {
+  font-family: Roboto, sans-serif !important;
+}
+
+body {
+  font-family: inherit !important;
+}
+
+// Override heading fonts to use Montserrat
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif !important;
+}
+
+// Override navbar font
+.navbar-light, nav {
+  font-family: Roboto, sans-serif !important;
+}
+
+// Override code/pre fonts
+pre, code {
+  font-family: "Roboto Mono", monospace !important;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// LAYOUT ADJUSTMENTS - Content Width Optimization
+// Matching Sheng.mhtml layout scheme
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Remove bio-text max-width constraint for better space utilization
+.bio-text {
+  max-width: none !important;
+}
+
+// Alternative: target with higher specificity
+.resume-biography .bio-text,
+.resume-biography-3 .bio-text {
+  max-width: none !important;
+}
+
+// Remove prose max-width constraint to align with Education section
+.resume-biography .prose,
+.resume-biography-3 .prose {
+  max-width: none !important;
+}
+
+// Adjust Education grid layout for better card width on wide screens
+// Change from 3 columns to 2 columns on xl screens for wider cards
+.resume-biography .grid.xl\:grid-cols-3,
+.resume-biography-3 .grid.xl\:grid-cols-3 {
+  @media (min-width: 80rem) { // xl breakpoint (1280px)
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+// Ensure Interests flex container can expand to full width
+.resume-biography .flex.flex-wrap,
+.resume-biography-3 .flex.flex-wrap {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// GRID LAYOUT - Horizontal Spacing Between Avatar and Content
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Adjust horizontal gap between avatar column and Professional Summary column
+.blox-resume-biography-3 .grid.md\\:grid-cols-12 {
+  // Mobile: keep default gap-6 (24px)
+  column-gap: 1.5rem !important;
+
+  // Medium+ screens: increase from gap-8 (32px) to gap-12 (48px)
+  @media (min-width: 48rem) {
+    column-gap: 3rem !important;
+  }
+
+  // Large screens: even more spacing (64px)
+  @media (min-width: 64rem) {
+    column-gap: 4rem !important;
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// SOCIAL ICONS - Blue Color Theme (Only for Author Profile)
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Only target social icons in the flex container below the avatar
+// This is more specific and won't affect section header icons
+.flex.flex-wrap.justify-center.gap-4 a[aria-label*="brands/"],
+.flex.flex-wrap.justify-center.gap-4 a[aria-label*="academicons/"],
+.flex.flex-wrap.justify-center.gap-4 a[aria-label*="at-symbol"] {
+  color: #1565c0 !important; // Material Blue 800
+  background-color: rgba(21, 101, 192, 0.05) !important; // Light blue background
+  border-color: rgba(21, 101, 192, 0.2) !important;
+
+  &:hover {
+    color: #0d47a1 !important; // Material Blue 900
+    background-color: rgba(21, 101, 192, 0.1) !important;
+    border-color: rgba(21, 101, 192, 0.4) !important;
+  }
+
+  // Target SVG icons inside
+  svg {
+    color: #1565c0 !important;
+    fill: currentColor !important;
+  }
+
+  &:hover svg {
+    color: #0d47a1 !important;
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// WECHAT QR CODE MODAL
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Modal overlay
+.wechat-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.3s ease;
+}
+
+.wechat-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Modal content
+.wechat-modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+.wechat-modal-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+}
+
+// Close button
+.wechat-modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 32px;
+  height: 32px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0d47a1;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
