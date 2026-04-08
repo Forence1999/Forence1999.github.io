@@ -1,91 +1,176 @@
-@article{liu2024stability,
-  selected={true},
-  title = {Numerical Stability Analysis of High-Order Runge-Kutta Methods in Quantum Dynamics},
-  author = {Jiale Liu and Sarah O'Connor*},
-  year = {2024},
-  month = mar,
-  journal = {Journal of Computational Physics},
-  volume = {450},
-  pages = {110832},
-  issn = {0021-9991},
-  doi = {10.1016/j.jcp.2023.110832},
-  urldate = {2024-12-02},
-  langid = {english},
-  abstract = {The precise time-evolution of quantum systems is a cornerstone of computational physics. This paper investigates the numerical stability of high-order Runge-Kutta (RK) methods when applied to the time-dependent Schrödinger equation. We derive rigorous stability boundaries for symplectic and non-symplectic RK integrators and demonstrate that specific implicit schemes preserve unitarity over extended simulation times. By analyzing the spectral properties of the Hamiltonian operator, we establish a relationship between the Courant-Friedrichs-Lewy (CFL) condition and the imaginary eigenvalues characteristic of quantum propagators. Our findings are validated through simulations of wave packet scattering and harmonic oscillator dynamics, showing that our proposed optimized RK coefficients significantly reduce phase error accumulation compared to standard integrators.},
-  description={A rigorous analysis of numerical stability boundaries for high-order Runge-Kutta integrators in the context of time-dependent quantum mechanics.},
-  keywords={Computational Physics, Quantum Dynamics, Numerical Analysis, Runge-Kutta Methods}
-}
-
-@inproceedings{smith2024constructive,
-  title = {A Constructive Proof of the Generalized Riemann Hypothesis for Function Fields over Finite Constants},
-  booktitle = {Proceedings of the 2024 International Congress of Mathematicians (ICM)},
-  author = {John Smith# and Jiale Liu#* and Alan Turing},
-  year = {2024},
-  month = jun,
-  pages = {205--218},
-  publisher = {EMS Press},
-  address = {Paris, France},
-  doi = {10.4171/ICM2024/102},
-  urldate = {2024-12-02},
-  isbn = {978-3-03719-202-8},
-  abstract = {We present a novel constructive proof for the Generalized Riemann Hypothesis (GRH) specifically within the context of function fields over finite constants. Unlike previous existential approaches, our method utilizes the spectral interpretation of the Frobenius automorphism acting on étale cohomology groups. We explicitly construct the L-functions associated with algebraic curves and demonstrate that their zeros lie strictly on the critical line Re(s) = 1/2. This work bridges the gap between classical analytic number theory and geometric invariant theory, offering new insights into the distribution of prime polynomials. The constructive nature of our proof allows for the algorithmic verification of L-function properties for curves of genus g > 100, which was previously computationally intractable.},
-  preview={example.png},
-  description={A constructive proof demonstrating the validity of the Generalized Riemann Hypothesis for function fields using spectral interpretation of the Frobenius automorphism.},
-  keywords={Number Theory, Riemann Hypothesis, Function Fields, Algebraic Geometry}
-}
-
-@inproceedings{brown2023monte,
-  selected={true},
-  title = {Monte Carlo Simulations of Phase Transitions in 2D Ising Models on Non-Euclidean Lattices},
-  shorttitle = {Ising on Hyperbolic Planes},
-  booktitle = {2023 International Conference on Computational Physics (ICCP)},
-  author = {Charlie Brown and Jiale Liu*},
-  year = {2023},
-  month = dec,
-  pages = {45--52},
-  publisher = {APS},
-  address = {Tokyo, Japan},
-  doi = {10.1103/ICCP.2023.0045},
-  urldate = {2024-12-02},
-  isbn = {978-0-7354-2000-1},
-  abstract = {The behavior of spin systems on curved geometries offers a unique window into the interplay between topology and statistical mechanics. This study employs extensive Monte Carlo simulations to explore the phase transitions of the 2D Ising model mapped onto hyperbolic lattices (Poincaré disk). We utilize the Wolff cluster algorithm to overcome critical slowing down near the phase transition temperature. Our results indicate that the critical exponents on negatively curved surfaces deviate significantly from the standard Onsager solution for flat Euclidean lattices. Specifically, we observe a suppression of the correlation length divergence, suggesting a mean-field-like behavior induced by the exponential expansion of the lattice volume. These findings have implications for understanding quantum gravity models and holographic duality.},
-  preview={example.png},
-  description={Monte Carlo study revealing mean-field-like phase transitions and critical exponent deviations for Ising models on hyperbolic non-Euclidean lattices.},
-  keywords={Statistical Mechanics, Monte Carlo Simulation, Ising Model, Non-Euclidean Geometry}
-}
-
-@article{doe2025existence,
-  title = {On the Existence and Uniqueness of Solutions to Non-Linear Stochastic Partial Differential Equations},
-  author = {Jane Doe and Jiale Liu and Richard Feynman},
-  year = {2025},
-  month = jun,
-  journal = {Annals of Probability},
-  volume = {53},
-  number = {4},
-  pages = {1201--1245},
-  issn = {0091-1798},
-  doi = {10.1214/25-AOP1201},
-  copyright = {https://imstat.org/journals-and-publications/annals-of-probability/},
-  abstract={We establish the existence and uniqueness of strong solutions for a class of non-linear Stochastic Partial Differential Equations (SPDEs) driven by multiplicative Lévy noise. The equations under consideration model turbulent fluid flow and heat transport in random media. By employing a Galerkin approximation scheme combined with a compact embedding theorem, we prove the convergence of the approximate solutions in appropriate Hilbert spaces. Furthermore, we derive a priori estimates that ensure the global regularity of the solution almost surely. A key contribution of this work is the treatment of non-Lipschitz coefficients using a stochastic Gronwall inequality, extending the applicability of the theory to more singular physical models. We also discuss the ergodic properties of the invariant measures associated with the SPDEs.},
-  preview={example.png},
-  description={Mathematical proof of existence and uniqueness for non-linear SPDEs with multiplicative Lévy noise, extending theory to non-Lipschitz coefficients.},
-  keywords={Stochastic Analysis, SPDE, Existence Theorems, Probability Theory}
-}
-
-
-@article{liu2025algorithmic,
-  title = {Algorithmic Complexity of Tensor Network Contractions in Many-Body Localization},
-  author = {Jiale Liu and Ada Lovelace*},
-  year = {2025},
-  month = sep,
-  journal = {Physical Review E},
-  issn = {2470-0045},
-  publisher = {APS},
-  abstract = {Simulating the dynamics of many-body localized (MBL) systems poses a significant challenge due to the logarithmic growth of entanglement entropy. This paper analyzes the algorithmic complexity of contracting Tensor Networks, specifically Matrix Product States (MPS) and Projected Entangled Pair States (PEPS), when applied to MBL Hamiltonians. We prove that while the exact contraction is #P-complete, approximate contraction schemes based on singular value decomposition (SVD) truncation exhibit polynomial time complexity with bounded error for short-time evolution. However, we identify a "complexity phase transition" at the ergodic-MBL transition point, where the bond dimension required for a fixed accuracy diverges exponentially. We propose a novel adaptive bond-dimension algorithm that optimizes computational resources by exploiting the area law of entanglement in the localized phase, demonstrating superior performance on Heisenberg spin chains.},
-  description={Complexity analysis of tensor network contractions in MBL systems, identifying a complexity phase transition and proposing an adaptive algorithm.},
-  keywords={Tensor Networks, Many-Body Localization, Complexity Theory, Quantum Information},
-  doi = {10.1103/PhysRevE.112.092101},
+@inproceedings{toolself-icml2026,
+  title = {ToolSelf: Runtime Self-Reconfiguration for Robust Long-Horizon Agentic Tasks},
+  author = {Jingqi Zhou and Sheng Wang* and Dezhao Deng and Junwen Lu and Qintong Li and Jiahui Gao and Junwei Su and Hao Wu and Jiyue Jiang and Lingpeng Kong and Chuan Wu*},
+  year = {2026},
+  month = jan,
+  booktitle = {ICML 2026 Submission},
+  abstract = {ToolSelf introduces runtime self-reconfiguration capabilities for robust long-horizon agentic tasks, enabling agents to adapt their tool usage dynamically.},
+  description = {ICML 2026 submission on runtime self-reconfiguration for agentic systems.},
+  keywords = {Agent System, ICML 2026 Submission, Co-Corresponding Author},
   selected = {true},
-  code = {https://github.com/xyjoey/Tensor_Network_Complexity_MBL},
+  preview = {toolself-icml2026.jpg}
 }
 
+@inproceedings{therapygym-icml2026,
+  title = {TherapyGym: Evaluating and Aligning Clinical Fidelity and Safety in Therapy Chatbots},
+  author = {Fangrui Huang and Souhad Chbeir and Arpandeep Khatua and Sheng Wang and Sijun Tan and Kenan Ye and Lillian Annabelle Bailey and Merryn Daniel and Ryan Louie and Sanmi Koyejo and Ehsan Adeli},
+  year = {2026},
+  month = jan,
+  booktitle = {ICML 2026 Submission},
+  abstract = {TherapyGym presents a comprehensive framework for evaluating and aligning clinical fidelity and safety in therapy chatbots, addressing critical concerns in mental health AI applications.},
+  description = {ICML 2026 submission on evaluating clinical fidelity and safety in therapy chatbots.},
+  keywords = {AI Psychology, ICML 2026 Submission},
+  selected = {true},
+  preview = {therapygym-icml2026.jpg}
+}
+
+@inproceedings{treesynth-nips2025,
+  title = {TreeSynth: Synthesizing Diverse Data from Scratch via Tree-Guided Subspace Partitioning},
+  author = {Sheng Wang# and Pengan Chen# and Jingqi Zhou# and Qintong Li and Jingwei Dong and Jiahui Gao and Boyang Xue and Jiyue Jiang and Lingpeng Kong and Chuan Wu},
+  year = {2025},
+  month = jan,
+  booktitle = {Neural Information Processing Systems (NeurIPS) 2025},
+  abstract = {TreeSynth introduces a novel approach to synthesizing diverse data from scratch via tree-guided subspace partitioning, enabling more effective data generation for machine learning applications.},
+  description = {A spotlight paper at NeurIPS 2025 presenting TreeSynth, a method for synthesizing diverse data through tree-guided subspace partitioning.},
+  keywords = {Data Synthesis, NeurIPS 2025 Spotlight, First Author},
+  url = {https://arxiv.org/abs/2503.17195},
+  selected = {true},
+  preview = {treesynth-nips2025.jpg}
+}
+
+@inproceedings{prorreason-emnlp2025,
+  title = {ProReason: Multi-modal proactive reasoning with decoupled eyesight and wisdom},
+  author = {Jingqi Zhou and Sheng Wang* and Jingwei Dong and Lei Li and Jiahui Gao and Lingpeng Kong and Chuan Wu*},
+  year = {2025},
+  month = jan,
+  booktitle = {The 2025 Conference on Empirical Methods in Natural Language Processing},
+  abstract = {ProReason proposes a framework to decouple visual and reasoning capabilities, leveraging LLMs to enhance multi-modal reasoning performance.},
+  description = {EMNLP 2025 main conference paper on multimodal proactive reasoning.},
+  keywords = {Multimodal Reasoning, EMNLP 2025 Main, Co-Corresponding Author},
+  url = {https://arxiv.org/abs/2410.14138},
+  selected = {true},
+  preview = {prorreason-emnlp2025.jpg}
+}
+
+@inproceedings{qspec-emnlp2025,
+  title = {QSpec: Speculative decoding with complementary quantization schemes},
+  author = {Juntao Zhao# and Wenhao Lu# and Sheng Wang# and Lingpeng Kong and Chuan Wu},
+  year = {2025},
+  month = jan,
+  booktitle = {The 2025 Conference on Empirical Methods in Natural Language Processing},
+  abstract = {QSpec proposes speculative decoding with complementary quantization schemes to achieve lossless inference acceleration in low-resource scenarios.},
+  description = {EMNLP 2025 main conference paper on efficient inference through speculative decoding.},
+  keywords = {Efficient Inference, EMNLP 2025 Main, First Author},
+  url = {https://arxiv.org/abs/2410.11305},
+  selected = {true},
+  preview = {qspec-emnlp2025.jpg}
+}
+
+@inproceedings{mos-iclr2025,
+  title = {MoS: Unleashing parameter efficiency of low-rank adaptation with mixture of shards},
+  author = {Sheng Wang and Liheng Chen and Pengan Chen and Jingwei Dong and Boyang Xue and Jiyue Jiang and Lingpeng Kong and Chuan Wu},
+  year = {2025},
+  month = jan,
+  booktitle = {The Thirteenth International Conference on Learning Representations},
+  abstract = {MoS introduces a novel approach to parameter-efficient fine-tuning by unleashing the efficiency of low-rank adaptation through mixture of shards, significantly reducing trainable parameters for multi-user personalization scenarios.},
+  description = {ICLR 2025 paper on more parameter-efficient low-rank adaptation through mixture of shards.},
+  keywords = {Parameter-Efficient Fine-Tuning, ICLR 2025, First Author},
+  selected = {true},
+  preview = {mos-iclr2025.jpg}
+}
+
+@inproceedings{cantonese-dataset-emnlp2025,
+  title = {Developing and Utilizing a Large-Scale Cantonese Dataset for Multi-Tasking in Large Language Models},
+  author = {Jiyue Jiang and Alfred Kar Yin Truong and Yanyu Chen and Qinghang Bao and Sheng Wang and Pengan Chen and Jiuming Wang and Lingpeng Kong and Yu Li and Chuan Wu},
+  year = {2025},
+  month = nov,
+  booktitle = {The 2025 Conference on Empirical Methods in Natural Language Processing},
+  abstract = {This paper presents the development and utilization of a large-scale Cantonese dataset designed for multi-tasking in large language models, addressing the scarcity of high-quality Cantonese resources for training and evaluating LLMs.},
+  description = {EMNLP 2025 Findings paper on developing a large-scale Cantonese dataset for LLM multi-tasking.},
+  keywords = {Multilingual NLP, EMNLP 2025 Findings}
+}
+
+@inproceedings{mlingconf-acl2025,
+  title = {MlingConf: A Comprehensive Study of Multilingual Confidence Estimation on Large Language Models},
+  author = {Boyang Xue and Hongru Wang and Rui Wang and Sheng Wang and Zezhong Wang and Yiming Du and Bin Liang and Wenxuan Zhang and Kam-Fai Wong},
+  year = {2025},
+  month = aug,
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  abstract = {MlingConf presents a comprehensive study of multilingual confidence estimation on large language models, exploring how confidence calibration varies across different languages and providing insights for improving multilingual LLM reliability.},
+  description = {ACL 2025 Findings paper on multilingual confidence estimation in LLMs.},
+  keywords = {Multilingual NLP, ACL 2025 Findings}
+}
+
+@inproceedings{ualign-acl2025,
+  title = {UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models},
+  author = {Boyang Xue and Fei Mi and Qi Zhu and Hongru Wang and Rui Wang and Sheng Wang and Erxin Yu and Xuming Hu and Kam-Fai Wong},
+  year = {2025},
+  month = aug,
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  abstract = {UAlign leverages uncertainty estimations to improve factuality alignment in large language models, addressing the critical challenge of ensuring factual accuracy in LLM outputs.},
+  description = {ACL 2025 main conference paper on factuality alignment using uncertainty estimation.},
+  keywords = {LLM Alignment, ACL 2025 Main}
+}
+
+@inproceedings{cantonese-naacl2025,
+  title = {How Well Do LLMs Handle Cantonese? Benchmarking Cantonese Capabilities of Large Language Models},
+  author = {Jiyue Jiang and Pengan Chen and Liheng Chen and Sheng Wang and Qinghang Bao and Lingpeng Kong and Yu Li and Chuan Wu},
+  year = {2025},
+  month = jan,
+  booktitle = {The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL},
+  abstract = {This paper benchmarks factual generation, mathematical logic, complex reasoning, and general knowledge in Cantonese for modern large language models.},
+  description = {NAACL 2025 Findings paper benchmarking Cantonese capabilities of large language models.},
+  keywords = {Multilingual NLP, NAACL 2025 Findings},
+  url = {https://arxiv.org/abs/2408.16756},
+  preview = {cantonese-naacl2025.jpg}
+}
+
+@inproceedings{forewarned-iclr2025,
+  title = {Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-Induced Exploration},
+  author = {Qintong Li and Jiahui Gao and Sheng Wang and Renjie Pi and Xueliang Zhao and Chuan Wu and Xin Jiang and Zhenguo Li and Lingpeng Kong},
+  year = {2025},
+  month = jan,
+  booktitle = {The Thirteenth International Conference on Learning Representations},
+  abstract = {This work proposes ReverseGen, a data synthesis framework that exposes model weaknesses through failure-induced exploration and uses them to generate stronger training samples.},
+  description = {ICLR 2025 paper on data synthesis through failure-induced exploration.},
+  keywords = {Data Synthesis, ICLR 2025},
+  url = {https://arxiv.org/abs/2410.16736},
+  preview = {forewarned-iclr2025.jpg}
+}
+
+@inproceedings{prolora-acl2024,
+  title = {PRoLoRA: Partial rotation empowers more parameter-efficient LoRA},
+  author = {Sheng Wang and Boyang Xue and Jiacheng Ye and Jiyue Jiang and Liheng Chen and Lingpeng Kong and Chuan Wu},
+  year = {2024},
+  month = aug,
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  abstract = {PRoLoRA introduces partial rotation to empower more parameter-efficient LoRA, achieving better performance with fewer trainable parameters.},
+  description = {ACL 2024 main conference paper on more parameter-efficient fine-tuning with partial rotation.},
+  keywords = {Parameter-Efficient Fine-Tuning, ACL 2024 Main, First Author},
+  selected = {true},
+  preview = {prolora-acl2024.jpg}
+}
+
+@inproceedings{lora-dropout-acl2024,
+  title = {LoRA meets dropout under a unified framework},
+  author = {Sheng Wang and Liheng Chen and Jiyue Jiang and Boyang Xue and Lingpeng Kong and Chuan Wu},
+  year = {2024},
+  month = aug,
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2024},
+  abstract = {This paper presents a unified framework connecting LoRA and dropout, providing theoretical insights and practical improvements for parameter-efficient fine-tuning.},
+  description = {ACL 2024 Findings paper unifying LoRA and dropout in a single framework.},
+  keywords = {Parameter-Efficient Fine-Tuning, ACL 2024 Findings, First Author},
+  preview = {lora-dropout-acl2024.jpg}
+}
+
+@inproceedings{cognitive-dialogue-acl2023,
+  title = {A cognitive stimulation dialogue system with multi-source knowledge fusion for elders with cognitive impairment},
+  author = {Jiyue Jiang and Sheng Wang and Qintong Li and Lingpeng Kong and Chuan Wu},
+  year = {2023},
+  month = jul,
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  abstract = {This paper presents a cognitive stimulation dialogue system that fuses multi-source knowledge to assist elders with cognitive impairment.},
+  description = {ACL 2023 main conference paper on dialogue systems for cognitive health.},
+  keywords = {Healthcare AI, ACL 2023 Main},
+  preview = {cognitive-dialogue-acl2023.jpg}
+}

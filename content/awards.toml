@@ -1,27 +1,23 @@
 type = "card"
 title = "Awards"
-description = "Honors and awards I have received."
+description = "Selected honors and distinctions."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
+title = "Honours Degree (9/300) & Outstanding Graduate"
+subtitle = "Huazhong University of Science and Technology"
+date = "2021"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2024"
-content = "Description of the award."
+title = "National Scholarship & Xiaomi Scholarship"
+subtitle = "Huazhong University of Science and Technology"
+date = "2020"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2023"
-content = "Description of the award."
+title = "Meritorious Winner"
+subtitle = "Mathematical Contest in Modeling"
+date = "2020"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+title = "Best Team & Best Individual"
+subtitle = "AI Summer Experience in National University of Singapore"
+date = "2019"

@@ -3,9 +3,9 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Agent System",
+  "LLM Super-Alignment",
+  "Data Synthesis"
 ]
 
 [[sections]]
@@ -19,11 +19,10 @@ id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
 filter = "selected"
-limit = 5
+limit = 6
 
 [[sections]]
 id = "news"
 type = "list"
 title = "News"
 source = "news.toml"
-

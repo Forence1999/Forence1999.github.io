@@ -1,5 +1,5 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am Sheng Wang, a PhD graduate in Computer Science from The University of Hong Kong, where I was advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/index.html) and [Prof. Lingpeng Kong](https://ikekonglp.github.io/).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+My research focuses on agent system, LLM super-alignment, and data synthesis. I have published 14+ papers in top-tier venues including NeurIPS 2025, ICLR 2025, ACL 2024/2025, and EMNLP 2025, with work spanning parameter-efficient fine-tuning, multimodal reasoning, efficient inference, and synthetic data generation.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+Beyond academia, I am deeply interested in entrepreneurship and application-driven AI research. Most recently, I have been building AI-native workflows and assembling a cross-functional team for adolescent psychological counseling products.

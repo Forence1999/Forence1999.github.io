@@ -1,51 +1,45 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
-favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+title = "Sheng Wang"
+description = "Personal website of Sheng Wang, focusing on agent systems, LLM super-alignment, and data synthesis."
+favicon = "/favicon.png"
+last_updated = "April 8, 2026"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "Sheng Wang"
+title = "PhD Graduate in Computer Science"
+institution = "The University of Hong Kong"
 avatar = "/bio.jpg"
 
 [social]
-# Contact information (leave blank or delete to hide)
-
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
-location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
-]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+email = "forence1999@outlook.com"
+google_scholar = "https://scholar.google.com/citations?user=BYxiWaIAAAAJ&hl=en"
+github = "https://github.com/Forence1999"
+linkedin = "https://www.linkedin.com/in/forence1999"
+x = "https://x.com/Forence1999"
+cv = "/resume.pdf"
+wechat_qr = "/wechat.jpg"
+wechat_id = "Forence1999"
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false
 
 [i18n]
-enabled = true
-locales = ["zh", "en"]
+enabled = false
+locales = ["en"]
 default_locale = "en"
 # "auto" means the locale will be determined by the browser's language setting, "fixed" means the locale will be fixed to the default locale (but can be switched still, if you want to disable, set "enable=false")
-mode = "auto"
+mode = "fixed"
 fixed_locale = "en"
 # If true, PRISM will remember user's language preference in browser's localStorage
-persist = true
+persist = false
 # Show a language switcher on the top right corner
-switcher = true
+switcher = false
 
 [i18n.labels]
-zh = "中文"
 en = "English"
 
 [[navigation]]
@@ -61,25 +55,13 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
+title = "Experience"
 type = "page"
-target = "teaching"
-href = "/teaching"
+target = "experience"
+href = "/experience"
 
 [[navigation]]
 title = "Awards"
 type = "page"
 target = "awards"
 href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
-
-[[navigation]]
-title = "CV"
-type = "page"
-target = "cv"
-href = "/cv"

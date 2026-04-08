@@ -1,0 +1,36 @@
+type = "card"
+title = "Experience"
+description = "Research, product, and entrepreneurial work."
+
+[[items]]
+title = "Project Leader"
+subtitle = "Family Education Project"
+date = "2025.02 - 2026.01"
+content = """
+- Built a cross-functional AI-native team across full-stack development, algorithm research, product design, and operations
+- Designed iterative SOPs for market research, user modeling, product iteration, and development collaboration
+- Focused on adolescent psychological counseling as an application-driven product direction
+"""
+tags = ["Entrepreneurship", "AI Product", "Leadership"]
+
+[[items]]
+title = "Main Contributor"
+subtitle = "Smart Speaker Research"
+date = "2022.09 - 2024.09"
+content = """
+- Contributed to MoS, PRoLoRA, ProReason, and QSpec across efficient fine-tuning, multimodal reasoning, and inference acceleration
+- Built Cantonese evaluation datasets and compared 35+ large language models
+- Developed end-to-end ASR and TTS systems with customized voice characteristics
+"""
+tags = ["LLMs", "Speech", "Research"]
+
+[[items]]
+title = "Main Contributor"
+subtitle = "Smart Robotic Walker - Sound Source Localization"
+date = "2021.09 - 2022.12"
+content = """
+- Collected and processed 1,984 pieces of multi-channel microphone data
+- Improved RD3Net-based sound source localization accuracy from 88.2% to 93.6%
+- Explored A2C and D3QN reinforcement learning for online model adaptation
+"""
+tags = ["Robotics", "Signal Processing", "Reinforcement Learning"]

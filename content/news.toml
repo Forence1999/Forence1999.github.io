@@ -1,7 +1,23 @@
 [[news]]
-date = "2025-11"
-content = "Our work has been accepted by a prestigious journal 🎉"
+date = "2026-01"
+content = "ToolSelf and TherapyGym were prepared as ICML 2026 submissions on agentic systems and therapy chatbots."
 
 [[news]]
-date = "2025-09"
-content = "Starting my PhD at the University of Example"
+date = "2025-11"
+content = "Graduated with a PhD in Computer Science from The University of Hong Kong."
+
+[[news]]
+date = "2025-12"
+content = "TreeSynth was selected as a Spotlight paper at NeurIPS 2025."
+
+[[news]]
+date = "2025-11"
+content = "QSpec and ProReason appeared at EMNLP 2025, covering efficient inference and multimodal reasoning."
+
+[[news]]
+date = "2025-04"
+content = "MoS and Forewarned were accepted to ICLR 2025."
+
+[[news]]
+date = "2024-08"
+content = "PRoLoRA and LoRA meets dropout were accepted to ACL 2024."
