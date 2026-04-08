@@ -7,21 +7,21 @@ date = "2025-11"
 content = "Graduated with a PhD in the School of Computing and Data Science from The University of Hong Kong. 🎉"
 
 [[news]]
-date = "2025-12"
+date = "2025-09"
 content = "`TreeSynth` was selected as a Spotlight paper at NeurIPS 2025. 🎉"
 
 [[news]]
-date = "2025-11"
+date = "2025-08"
 content = "`QSpec` and `ProReason` appeared at EMNLP 2025, covering efficient inference and multimodal reasoning."
 
 [[news]]
-date = "2025-04"
+date = "2025-01"
 content = "`MoS` and `Forewarned` were accepted to ICLR 2025."
 
 [[news]]
-date = "2025-02"
+date = "2024-11"
 content = "I began my entrepreneurial journey in family education. 🎉"
 
 [[news]]
-date = "2024-08"
+date = "2024-05"
 content = "`PRoLoRA` and `LoRA Meets Dropout` were accepted to ACL 2024."

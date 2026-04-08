@@ -7,21 +7,21 @@ date = "2025-11"
 content = "我从香港大学计算与数据科学学院获得博士学位。 🎉"
 
 [[news]]
-date = "2025-12"
+date = "2025-09"
 content = "`TreeSynth` 入选 NeurIPS 2025 Spotlight。 🎉"
 
 [[news]]
-date = "2025-11"
+date = "2025-08"
 content = "`QSpec` 和 `ProReason` 被 EMNLP 2025 接收，聚焦高效推理与多模态推理。"
 
 [[news]]
-date = "2025-04"
+date = "2025-01"
 content = "`MoS` 和 `Forewarned` 被 ICLR 2025 接收。"
 
 [[news]]
-date = "2025-02"
+date = "2024-11"
 content = "我开始了在家庭教育领域的创业之旅。 🎉"
 
 [[news]]
-date = "2024-08"
+date = "2024-05"
 content = "`PRoLoRA` 和 `LoRA Meets Dropout` 被 ACL 2024 接收。"
