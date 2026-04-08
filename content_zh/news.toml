@@ -1,7 +1,27 @@
 [[news]]
-date = "2025-11"
-content = "我们的工作被顶级期刊接收了 🎉"
+date = "2026-01"
+content = "`ToolSelf` 和 `TherapyGym` 已作为 ICML 2026 关于智能体系统与治疗聊天机器人的投稿完成准备。 🎉"
 
 [[news]]
-date = "2025-09"
-content = "在某某大学开始博士学习"
+date = "2025-11"
+content = "我从香港大学计算与数据科学学院获得博士学位。 🎉"
+
+[[news]]
+date = "2025-12"
+content = "`TreeSynth` 入选 NeurIPS 2025 Spotlight。 🎉"
+
+[[news]]
+date = "2025-11"
+content = "`QSpec` 和 `ProReason` 被 EMNLP 2025 接收，聚焦高效推理与多模态推理。"
+
+[[news]]
+date = "2025-04"
+content = "`MoS` 和 `Forewarned` 被 ICLR 2025 接收。"
+
+[[news]]
+date = "2025-02"
+content = "我开始了在家庭教育领域的创业之旅。 🎉"
+
+[[news]]
+date = "2024-08"
+content = "`PRoLoRA` 和 `LoRA Meets Dropout` 被 ACL 2024 接收。"

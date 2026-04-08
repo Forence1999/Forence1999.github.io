@@ -41,6 +41,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
   return entries.map((entry: { entryType: string; citationKey: string; entryTags: Record<string, string> }, index: number) => {
     const tags = entry.entryTags;
+    const paperUrl = cleanBibTeXString(tags.url);
 
     // Parse authors
     const authors = parseAuthors(tags.author || '', highlightNames);
@@ -82,7 +83,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       issue: tags.number,
       pages: tags.pages,
       doi: tags.doi,
-      url: tags.url,
+      url: paperUrl,
       code: tags.code,
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
@@ -90,7 +91,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'pdf', 'pdfurl']),
     };
 
     // Clean up undefined fields
@@ -194,10 +195,10 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       let name = author.trim();
 
       // Check for corresponding author marker
-      const isCorresponding = name.includes('*');
+      const isCorresponding = name.includes('#');
 
-      // Check for co-author marker (#)
-      const isCoAuthor = name.includes('#');
+      // Check for co-author marker (*)
+      const isCoAuthor = name.includes('*');
 
       // Remove special markers from name
       name = name.replace(/[*#]/g, '');
@@ -214,8 +215,8 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       const lowerName = name.toLowerCase();
       const normalizedName = normalizePersonNameForMatch(lowerName);
       const isHighlighted =
-        highlightTextList.some((candidate) => lowerName.includes(candidate)) ||
-        highlightNormalizedList.some((candidate) => normalizedName.includes(candidate));
+        highlightTextList.some((candidate) => lowerName === candidate) ||
+        highlightNormalizedList.some((candidate) => normalizedName === candidate);
 
       return {
         name,
@@ -262,6 +263,7 @@ function cleanBibTeXString(str?: string): string {
 
   return cleaned;
 }
+
 
 function detectResearchArea(title: string, keywords: string[]): ResearchArea {
   const text = (title + ' ' + keywords.join(' ')).toLowerCase();

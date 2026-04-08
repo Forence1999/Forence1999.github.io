@@ -9,6 +9,7 @@ import {
     CalendarIcon,
     BookOpenIcon,
     ClipboardDocumentIcon,
+    DocumentArrowDownIcon,
     DocumentTextIcon
 } from '@heroicons/react/24/outline';
 import { Publication } from '@/types/publication';
@@ -190,7 +191,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                         {messages.publications.noResults}
                     </div>
                 ) : (
-                    filteredPublications.map((pub, index) => (
+                    filteredPublications.map((pub, index) => {
+                        const pdfUrl = pub.url?.trim();
+
+                        return (
                         <motion.div
                             key={pub.id}
                             initial={{ opacity: 0, y: 20 }}
@@ -233,7 +237,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         ))}
                                     </p>
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
-                                        {pub.journal || pub.conference} {pub.year}
+                                        {pub.conference || [pub.journal, pub.year].filter(Boolean).join(' ')}
                                     </p>
 
                                     {pub.description && (
@@ -243,26 +247,6 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     )}
 
                                     <div className="flex flex-wrap gap-2 mt-auto">
-                                        {pub.doi && (
-                                            <a
-                                                href={`https://doi.org/${pub.doi}`}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                                            >
-                                                DOI
-                                            </a>
-                                        )}
-                                        {pub.url && (
-                                            <a
-                                                href={pub.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                                            >
-                                                {messages.publications.paper}
-                                            </a>
-                                        )}
                                         {pub.code && (
                                             <a
                                                 href={pub.code}
@@ -286,6 +270,17 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <DocumentTextIcon className="h-3 w-3 mr-1.5" />
                                                 {messages.publications.abstract}
                                             </button>
+                                        )}
+                                        {pdfUrl && (
+                                            <a
+                                                href={pdfUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                <DocumentArrowDownIcon className="h-3 w-3 mr-1.5" />
+                                                {messages.publications.pdf}
+                                            </a>
                                         )}
                                         {pub.bibtex && (
                                             <button
@@ -348,7 +343,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 </div>
                             </div>
                         </motion.div>
-                    ))
+                        );
+                    })
                 )}
             </div>
         </motion.div>

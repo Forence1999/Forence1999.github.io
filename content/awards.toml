@@ -2,22 +2,36 @@ type = "card"
 title = "Awards"
 description = "Selected honors and distinctions."
 
+
 [[items]]
 title = "Honours Degree (9/300) & Outstanding Graduate"
 subtitle = "Huazhong University of Science and Technology"
 date = "2021"
+tags = ["Wuhan"]
 
 [[items]]
-title = "National Scholarship & Xiaomi Scholarship"
-subtitle = "Huazhong University of Science and Technology"
+title = "National Scholarship & Xiaomi Scholarship & Merit Student"
 date = "2020"
+tags = ["Wuhan"]
 
 [[items]]
 title = "Meritorious Winner"
 subtitle = "Mathematical Contest in Modeling"
 date = "2020"
+tags = ["Wuhan"]
 
 [[items]]
 title = "Best Team & Best Individual"
 subtitle = "AI Summer Experience in National University of Singapore"
 date = "2019"
+tags = ["Singapore"]
+
+[[items]]
+title = "Samsung Scholarship & Merit Student"
+date = "2019"
+tags = ["Wuhan"]
+
+[[items]]
+title = "National Encouragement Scholarship & Model Freshman of Academic Records"
+date = "2018"
+tags = ["Wuhan"]

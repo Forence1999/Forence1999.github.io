@@ -3,25 +3,34 @@ title = "奖项"
 description = "我获得的荣誉与奖项。"
 
 [[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2025"
-content = "奖项说明。"
+title = "荣誉学士学位（9/300）与优秀毕业生"
+subtitle = "华中科技大学"
+date = "2021"
+tags = ["武汉"]
 
 [[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2024"
-content = "奖项说明。"
+title = "国家奖学金与小米奖学金与校三好学生奖学金"
+date = "2020"
+tags = ["武汉"]
 
 [[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2023"
-content = "奖项说明。"
+title = "一等奖"
+subtitle = "全美大学生数学建模竞赛"
+date = "2020"
+tags = ["武汉"]
 
 [[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2022"
-content = "奖项说明。"
+title = "最佳小组与最佳个人"
+subtitle = "新加坡国立大学暑期人工智能夏令营"
+date = "2019"
+tags = ["新加坡"]
+
+[[items]]
+title = "三星奖学金与校三好学生奖学金"
+date = "2019"
+tags = ["武汉"]
+
+[[items]]
+title = "国家励志奖学金与新生学习优秀奖学金"
+date = "2018"
+tags = ["武汉"]
