@@ -55,8 +55,7 @@ export default function Profile({ author, social, features, researchInterests }:
     const [showEmail, setShowEmail] = useState(false);
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [showWechat, setShowWechat] = useState(false);
-    const [isWechatPinned, setIsWechatPinned] = useState(false);
-    const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | 'wechat' | null>(null);
+    const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
 
     const xUrl = typeof social.x === 'string' ? social.x : undefined;
     const cvUrl = typeof social.cv === 'string' ? social.cv : undefined;
@@ -343,43 +342,29 @@ export default function Profile({ author, social, features, researchInterests }:
                     {(wechatQr || wechatId) && (
                         <div className="relative">
                             <button
-                                onMouseEnter={() => {
-                                    if (!isWechatPinned) setShowWechat(true);
-                                    setLastClickedTooltip('wechat');
-                                }}
-                                onMouseLeave={() => !isWechatPinned && setShowWechat(false)}
-                                onClick={() => {
-                                    setIsWechatPinned(!isWechatPinned);
-                                    setShowWechat(!isWechatPinned);
-                                    setLastClickedTooltip('wechat');
-                                }}
-                                className={`inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all duration-200 ${isWechatPinned
-                                    ? 'bg-accent/10 text-accent'
-                                    : 'bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:text-accent hover:shadow-sm'
-                                    }`}
+                                type="button"
+                                onMouseEnter={() => setShowWechat(true)}
+                                onMouseLeave={() => setShowWechat(false)}
+                                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all duration-200 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:text-accent hover:shadow-sm"
                             >
                                 <QrCode className="h-4 w-4" />
                                 <span>WeChat</span>
                             </button>
 
                             <AnimatePresence>
-                                {(showWechat || isWechatPinned) && (
+                                {showWechat && (
                                     <motion.div
                                         initial={{ opacity: 0, y: 10, scale: 0.8 }}
                                         animate={{ opacity: 1, y: -10, scale: 1 }}
                                         exit={{ opacity: 0, y: -20, scale: 0.8 }}
-                                        className={`absolute top-0 left-1/2 w-52 -translate-x-1/2 -translate-y-full rounded-lg bg-neutral-800 p-4 text-white shadow-lg ${lastClickedTooltip === 'wechat' ? 'z-20' : 'z-10'
-                                            }`}
-                                        onMouseEnter={() => {
-                                            if (!isWechatPinned) setShowWechat(true);
-                                            setLastClickedTooltip('wechat');
-                                        }}
-                                        onMouseLeave={() => !isWechatPinned && setShowWechat(false)}
+                                        className="absolute top-0 left-1/2 z-10 w-52 -translate-x-1/2 -translate-y-full rounded-lg bg-neutral-800 p-4 text-white shadow-lg"
+                                        onMouseEnter={() => setShowWechat(true)}
+                                        onMouseLeave={() => setShowWechat(false)}
                                     >
-                                            <div className="text-center">
-                                                {wechatQr && (
-                                                    <div className="mx-auto mb-2 w-36 overflow-hidden rounded-md bg-white p-2">
-                                                        <Image
+                                        <div className="text-center">
+                                            {wechatQr && (
+                                                <div className="mx-auto mb-2 w-36 overflow-hidden rounded-md bg-white p-2">
+                                                    <Image
                                                         src={wechatQr}
                                                         alt="WeChat QR code"
                                                         width={144}
@@ -387,11 +372,11 @@ export default function Profile({ author, social, features, researchInterests }:
                                                         className="h-auto w-full"
                                                     />
                                                 </div>
-                                                )}
-                                                {wechatId && (
-                                                    <p className="text-sm text-neutral-200">{wechatId}</p>
-                                                )}
-                                            </div>
+                                            )}
+                                            {wechatId && (
+                                                <p className="text-sm text-neutral-200">{wechatId}</p>
+                                            )}
+                                        </div>
                                         <div className="absolute top-full left-1/2 h-0 w-0 -translate-x-1/2 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-800"></div>
                                     </motion.div>
                                 )}
