@@ -1,7 +1,7 @@
 [site]
 title = "Sheng Wang"
 description = "Personal website of Sheng Wang, focusing on agent systems, LLM super-alignment, and data synthesis."
-favicon = "/favicon.png"
+favicon = "/bio.jpeg"
 last_updated = "April 8, 2026"
 
 [author]
